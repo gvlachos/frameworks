@@ -1,0 +1,41 @@
+<!-- component table -->
+<table class="ui selectable celled table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Thumbnail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      app-card
+      *ngFor="let card of cards"
+      (click)="goToDetails(card)"
+      [card]="card"
+      [@rowsAnimation]=""
+      (@rowsAnimation.start)="onAnimationStartEvent($event)"
+      (@rowsAnimation.done)="onAnimationDoneEvent($event)"
+    ></tr>
+  </tbody>
+</table>
+
+<!-- component pagination -->
+<section *ngIf="displayFooter">
+  <div class="pagination">
+    <div class="ui pagination menu">
+      <a *ngIf="hasPrevious" class="item" (click)="getCards(getPreviousPage())">
+        Previous
+      </a>
+      <a *ngIf="hasNext" class="item" (click)="getCards(getNextPage())">
+        Next
+      </a>
+    </div>
+  </div>
+
+  <div class="ui icon input">
+    <input type="text" placeholder="Search..." [(ngModel)]="searchTerm.name" />
+    <i class="inverted circular search link icon" (click)="getCards()"></i>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<div class="ui left vertical menu sidebar thin visible">
+  <a class="item" [routerLink]="'/cards'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+    <i title="cards" class="icon home"></i>
+    <span class="text">Cards</span>
+  </a>
+  <a class="item" [routerLink]="'/cards'" routerLinkActive="active-link" [queryParams]="{ type: 'clubs' }">
+    <i class="icomoon icomoon-clubs"></i>
+    <span class="text">Clubs</span>
+  </a>
+  <a class="item" [routerLink]="'/cards'" routerLinkActive="active-link" [queryParams]="{ type: 'diamonds' }">
+    <i class="icomoon icomoon-diamonds"></i>
+    <span class="text">Diamonds</span>
+  </a>
+  <a class="item" [routerLink]="'/cards'" routerLinkActive="active-link" [queryParams]="{ type: 'hearts' }">
+    <i class="icomoon icomoon-heart"></i>
+    <span class="text">Hearts</span>
+  </a>
+  <a class="item" [routerLink]="'/cards'" routerLinkActive="active-link" [queryParams]="{ type: 'spades' }">
+    <i class="icomoon icomoon-spades"></i>
+    <span class="text">Spades</span>
+  </a>
+</div>

@@ -1,0 +1,34 @@
+@import '../../constants.scss';
+
+.ui.thin.left.sidebar,
+.ui.thin.right.sidebar {
+  width: $sidebarWidth;
+  position: absolute;
+
+  background-color: #ebdeff;
+  @media screen and (max-width: $breakpoint) {
+    width: $sidebarSmallWidth;
+  }
+
+  .item {
+    font-size: 1.4rem;
+    color: #7f2b51;
+    @media screen and (max-width: $breakpoint) {
+      padding-bottom: 2rem;
+    }
+
+    .icomoon {
+      float: right;
+    }
+
+    .text {
+      @media screen and (max-width: $breakpoint) {
+        display: none;
+      }
+    }
+  }
+
+  .active-link {
+    color: #d38157;
+  }
+}

@@ -1,0 +1,37 @@
+@import '../constants.scss';
+
+$header-height: 5rem;
+$main-height: calc(100vh - 5rem);
+
+.app > .header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  min-height: $header-height;
+  width: 100vw;
+
+  padding-left: 1rem;
+  margin: 0;
+  background-color: #1d0b38;
+
+  h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2.2rem;
+  }
+}
+
+.main {
+  position: relative;
+  min-height: $main-height;
+}
+
+.main .pusher-left {
+  margin-left: $sidebarWidth;
+
+  @media screen and (max-width: $breakpoint) {
+    margin-left: $sidebarSmallWidth;
+  }
+}

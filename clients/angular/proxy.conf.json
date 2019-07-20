@@ -1,0 +1,7 @@
+{
+  "/deck/*": {
+    "target": "http://localhost:9330",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
