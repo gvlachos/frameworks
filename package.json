@@ -1,0 +1,8 @@
+{
+  "name": "frameworks",
+  "version": "1.0.0",
+  "description": "trying out different JS frameworks",
+  "main": "index.js",
+  "author": "George Vlachos",
+  "license": "MIT"
+}

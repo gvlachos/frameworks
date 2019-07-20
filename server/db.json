@@ -1,0 +1,274 @@
+{
+    "deck": [
+        {
+            "id": "ace_of_clubs",
+            "name": "ace of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "2_of_clubs",
+            "name": "2 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "3_of_clubs",
+            "name": "3 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "4_of_clubs",
+            "name": "4 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "5_of_clubs",
+            "name": "5 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "6_of_clubs",
+            "name": "6 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "7_of_clubs",
+            "name": "7 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "8_of_clubs",
+            "name": "8 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "9_of_clubs",
+            "name": "9 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "10_of_clubs",
+            "name": "10 of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "jack_of_clubs",
+            "name": "jack of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "queen_of_clubs",
+            "name": "queen of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "king_of_clubs",
+            "name": "king of clubs",
+            "type": "clubs"
+        },
+        {
+            "id": "ace_of_diamonds",
+            "name": "ace of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "2_of_diamonds",
+            "name": "2 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "3_of_diamonds",
+            "name": "3 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "4_of_diamonds",
+            "name": "4 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "5_of_diamonds",
+            "name": "5 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "6_of_diamonds",
+            "name": "6 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "7_of_diamonds",
+            "name": "7 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "8_of_diamonds",
+            "name": "8 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "9_of_diamonds",
+            "name": "9 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "10_of_diamonds",
+            "name": "10 of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "jack_of_diamonds",
+            "name": "jack of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "queen_of_diamonds",
+            "name": "queen of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "king_of_diamonds",
+            "name": "king of diamonds",
+            "type": "diamonds"
+        },
+        {
+            "id": "ace_of_hearts",
+            "name": "ace of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "2_of_hearts",
+            "name": "2 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "3_of_hearts",
+            "name": "3 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "4_of_hearts",
+            "name": "4 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "5_of_hearts",
+            "name": "5 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "6_of_hearts",
+            "name": "6 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "7_of_hearts",
+            "name": "7 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "8_of_hearts",
+            "name": "8 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "9_of_hearts",
+            "name": "9 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "10_of_hearts",
+            "name": "10 of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "jack_of_hearts",
+            "name": "jack of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "queen_of_hearts",
+            "name": "queen of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "king_of_hearts",
+            "name": "king of hearts",
+            "type": "hearts"
+        },
+        {
+            "id": "ace_of_spades",
+            "name": "ace of spades",
+            "type": "spades"
+        },
+        {
+            "id": "2_of_spades",
+            "name": "2 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "3_of_spades",
+            "name": "3 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "4_of_spades",
+            "name": "4 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "5_of_spades",
+            "name": "5 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "6_of_spades",
+            "name": "6 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "7_of_spades",
+            "name": "7 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "8_of_spades",
+            "name": "8 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "9_of_spades",
+            "name": "9 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "10_of_spades",
+            "name": "10 of spades",
+            "type": "spades"
+        },
+        {
+            "id": "jack_of_spades",
+            "name": "jack of spades",
+            "type": "spades"
+        },
+        {
+            "id": "queen_of_spades",
+            "name": "queen of spades",
+            "type": "spades"
+        },
+        {
+            "id": "king_of_spades",
+            "name": "king of spades",
+            "type": "spades"
+        },
+        {
+            "id": "red_joker",
+            "name": "red joker",
+            "type": "joker"
+        },
+        {
+            "id": "black_joker",
+            "name": "black joker",
+            "type": "joker"
+        }
+    ]
+}

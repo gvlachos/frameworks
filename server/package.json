@@ -1,0 +1,13 @@
+{
+  "name": "simple-deck-browser-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "export RED='\\033[0;31m' && export NC='\\033[0m' && export HOST=localhost && export PORT=9330 && echo \"${RED}starting server at $HOST:$PORT${NC}\" && json-server --static ./static --watch db.json --id id --port $PORT --host $HOST"
+  },
+  "author": "George Vlachos",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}
