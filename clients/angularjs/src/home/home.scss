@@ -1,0 +1,18 @@
+home {
+  width: 100vw;
+  height: 100vh;
+
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-align: center;
+  align-items: center;
+
+  background-color: #f5f5f5;
+
+  select {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding-left: 0.5rem;
+  }
+}

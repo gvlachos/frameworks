@@ -1,0 +1,20 @@
+<form class="form-search">
+    <h2 class="h2 mb-1 font-weight-normal">{{ cardList.cards && cardList.cards.length > 0 ? 'Available Cards' : 'No available cards'}}</h2>
+    <p ng-if="cardList.searchFromServerByName" class="mb-3 font-weight-normal text-muted">with name like '{{ cardList.searchFromServerByName }}'</p>
+    <p ng-if="cardList.searchFromServerByType" class="mb-3 font-weight-normal text-muted">with type '{{ cardList.searchFromServerByType }}'</p>
+    <ul class="list-group mb-3">
+        <li ng-repeat="card in cardList.cardsDisplayed = (cardList.cards | filter : cardList.search) | limitTo:cardList.cardsPerPage:cardList.cardsPerPage*(cardList.currentPage-1)"
+            class="list-group-item d-flex justify-content-between lh-condensed repeated-item">
+            <p class="my-0" ng-class="{selected: cardList.isSelected(card.id) }">{{ card.name }}</p>
+            <button
+                ng-click="cardList.showCardDetails(card.id)"
+                class="btn btn-primary btn-sm float-right mt-4" type="text">{{ card.type}}</button>
+        </li>
+    </ul>
+    <ul uib-pagination
+        ng-if="cardList.cardsDisplayed.length > cardList.cardsPerPage"
+        items-per-page="cardList.cardsPerPage"
+        total-items="cardList.cardsDisplayed.length"
+        ng-model="cardList.currentPage"
+        class="justify-content-center justify-content-md-start"></ul>
+</form>

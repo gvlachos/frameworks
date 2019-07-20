@@ -1,0 +1,11 @@
+$max-card-height: 5rem;
+$cards-per-page: 6;
+
+browser {
+  .card-detail-container {
+    @media (min-width: 768px) {
+      max-height: $max-card-height * $cards-per-page;
+      overflow: hidden;
+    }
+  }
+}

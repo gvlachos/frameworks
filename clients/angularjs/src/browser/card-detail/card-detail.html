@@ -1,0 +1,32 @@
+<div ng-if="cardDetail.cardsLoaded && !cardDetail.card" class="d-flex justify-content-center align-items-center info">
+  <span>Click any card button on the list to reveal more!</span>
+</div>
+
+<div ng-if="cardDetail.show" class="cardDetailFade">
+  <h2 class="text-center mb-3">{{ cardDetail.card.name }}</h2>
+</div>
+
+<div ng-if="cardDetail.show" class="cardDetailFade">
+  <div class="float-md-right ml-md-3 mb-3 d-block mx-auto text-center card">
+    <img
+      class="img-fluid"
+      ng-src="{{ cardDetail.cardImageUrl }}"
+      ng-click="cardDetail.showLarge()"
+      alt="{{ cardDetail.card.name }} Image"
+    />
+    <span class="text-muted">Click image to enlarge</span>
+  </div>
+
+  <h3>Description</h3>
+  <p>{{ cardDetail.card.name }}</p>
+
+  <h3>Details</h3>
+  <p ng-if="cardDetail.card.type">Type: {{ cardDetail.card.type }}</p>
+  <p ng-if="cardDetail.card.family">Family: {{ cardDetail.card.family }}</p>
+  <p>
+    <span ng-if="cardDetail.card.atk" class="pr-3">ATK: {{ cardDetail.card.atk }}</span>
+    <span ng-if="cardDetail.card.def" class="pr-3">DEF: {{ cardDetail.card.def }}</span>
+    <span ng-if="cardDetail.card.level">Level: {{ cardDetail.card.level }}</span>
+  </p>
+  <p ng-if="cardDetail.card.property">Property: {{ cardDetail.card.property }}</p>
+</div>

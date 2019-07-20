@@ -1,0 +1,46 @@
+<div class="container">
+  <form class="form-home mx-auto text-center">
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="h1 mb-3 font-weight-normal">Welcome</h2>
+        <h3 class="h3 mb-3 font-weight-normal">to the simple</h3>
+        <h1 class="h2 mb-3 font-weight-normal"><span>card&nbsp;deck</span> browser</h1>
+        <button class="btn btn-lg btn-primary" type="text" ui-sref="cards">Come inside!</button>
+      </div>
+    </div>
+  </form>
+
+  <form class="form-home-search mx-auto text-center" ng-submit="home.search()">
+    <div class="row">
+      <div class="col"><h2 class="h3 mb-3 font-weight-normal">search for cards</h2></div>
+    </div>
+
+    <div class="row">
+      <div class="offset-md-2 col-md-4">
+        <select name="search" id="searchSelect" ng-model="home.searchType">
+          <option value="">--- Please select ---</option>
+          <option value="name">with name like</option>
+          <option value="type">with type</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <input
+          name="value"
+          type="text"
+          class="form-control mb-3"
+          ng-model="home.searchValue"
+          ng-model-options="{ debounce: 300 }"
+          ng-readonly="home.searchType === ''"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-lg btn-primary" type="submit" ng-disabled="home.searchValue.length === 0" ng-click="">
+          Search for cards!
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

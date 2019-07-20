@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="py-3 text-center">
+    <h1 class="router-link" ui-sref="home">{{ browser.title }}</h1>
+    <p class="lead">A browser of cards.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="h2 mb-3 font-weight-normal">Search</h1>
+
+      <input
+        type="text"
+        class="mb-5 form-control"
+        placeholder="search by name"
+        ng-model="browser.search.name"
+        ng-model-options="{ debounce: 300 }"
+        ng-change="browser.searchCard()"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 card-list-container">
+      <card-list></card-list>
+    </div>
+
+    <div class="col-md-8 card-detail-container">
+      <card-detail></card-detail>
+    </div>
+  </div>
+</div>

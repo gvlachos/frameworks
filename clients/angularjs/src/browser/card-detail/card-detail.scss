@@ -1,0 +1,30 @@
+@import '../../theme';
+
+card-detail {
+  h2,
+  h3 {
+    color: $color-card-select;
+  }
+
+  .info {
+    height: 100%;
+  }
+
+  .cardDetailFade {
+    transition: 0.25s linear all;
+
+    .card {
+      cursor: help;
+      max-width: 10rem;
+      border: none;
+    }
+
+    .text-muted {
+      font-size: 0.8rem;
+    }
+  }
+
+  .cardDetailFade.ng-enter {
+    opacity: 0;
+  }
+}

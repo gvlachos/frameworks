@@ -1,0 +1,25 @@
+@import 'styles-variables';
+
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap';
+
+@import 'styles-reset';
+
+@import 'theme';
+
+.app {
+  h1,
+  h2,
+  h3 {
+    color: $color-main;
+  }
+  .router-link {
+    cursor: pointer;
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

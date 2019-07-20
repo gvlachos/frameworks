@@ -1,0 +1,16 @@
+@import '../../theme';
+
+card-list {
+  .repeated-item.ng-enter, .repeated-item.ng-move {
+    transition: all 0.5s linear;
+    opacity: 0;
+  }
+  .repeated-item.ng-enter.ng-enter-active,
+  .repeated-item.ng-move.ng-move-active {
+    opacity: 1;
+  }
+
+  .selected {
+    color: $color-card-select;
+  }
+}
